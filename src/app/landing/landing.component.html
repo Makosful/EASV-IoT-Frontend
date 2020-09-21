@@ -1,0 +1,11 @@
+<h1>Sensor Data!</h1>
+<ul *ngIf="sensorData">
+  <li *ngFor="let x of sensorData">
+    <span>Humidity: {{x.humidity}}</span> ::
+    <span>Location: {{x.location}}</span> ::
+    <span>Pressure: {{x.pressure}}</span> ::
+    <span>Sensor: {{x.sensor}}</span> ::
+    <span>Temperature: {{x.temperature}}</span> ::
+    <span>TimeStamp: {{x.timestamp}}</span>
+  </li>
+</ul>
